@@ -6,7 +6,7 @@ public class main {
     public static void main(String[] args){
        Scanner sc = new Scanner(System.in);
        System.out.println("Enter a number one , two , or three\n one is \"Rock\"\n two is \"Scissor\"\n three is \"Paper\"");
-       /*int player1 = sc.nextInt();
+       int player1 = sc.nextInt();
        int ai1 = (int)(Math.random()*(3-1+1)+1);
        System.out.println("You chose number"+player1);
        System.out.println("CPU chose number"+ai1);
@@ -24,7 +24,7 @@ public class main {
            System.out.println("You win...Paper>Rock... ");
        } else if (player1==3 && ai1==2) {
            System.out.println("You lose...Paper<Scissor...");
-       }*/
+       }
        int a = 7;
        int b = 0;
        int by= 11;
@@ -34,6 +34,7 @@ public class main {
            by++;
 
        }
+
 
 
     }
