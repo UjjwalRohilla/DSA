@@ -2,14 +2,18 @@ package JavaCourse.Questions.Arrays.Arrays;
 
 public class RoughForQuestions {
     public static void main(String[] args) {
-        int[] a = {5,2,1,3};
-        for (int i = 0; i < a.length; i++) {
-            for (int j = i+1; j <a.length ; j++) {
-                if(a[i]>a[i+1]){
-                    System.out.println("true");
-                    break;
-                }
-            }
-        }
+//        String a = new String("kunal");
+//        String b = new String("kunal");
+//        System.out.println(a.equals(b));
+
+        System.out.println('a'+'b');
+        char ch =(char)('b'+5);
+        System.out.println(ch);
+        StringBuilder build = new StringBuilder("ujjwal");
+        build = build.deleteCharAt(2);
+        System.out.println(build);
+        String str = "ujjwal";
+        str = str+"j";
+        System.out.println(str);
     }
 }
