@@ -4,18 +4,24 @@ import java.util.Scanner;
 
 public class roughClassForArraysPractice {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        int[][] arr = new int [2][2];
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr[i].length; j++) {
-                arr[i][j]= in.nextInt();
+        int[] arr = {2,3,5,9,14,16,18};
+        int target = 17;
+        int ans = binarysearch(arr,target);
+        System.out.println(ans);
+    }
+    static int binarysearch(int[] arr, int target){
+        int start = 0;
+        int end = arr.length-1;
+        while(start<=end){
+            int mid = start+(end-start)/2;
+            if(arr[mid]==target){
+                return mid;
+            } else if (arr[mid]<target) {
+                start = mid+1;
+            }else{
+                end = mid-1;
             }
-        } /*for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr[i].length; j++) {
-                System.out.println(arr[i][j]);
-            }
-        }*/
-        System.out.println(arr[1][0]);
-
+        }
+        return end;
     }
 }
